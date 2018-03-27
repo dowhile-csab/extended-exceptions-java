@@ -15,6 +15,8 @@ public interface ExtendedException {
 	 * Additional information and data about the exceptions, such as identity, URL etc.
 	 * <br>
 	 * If no additional data has been given, returns <code>null</code>
+	 * <br><br>
+	 * You may call {@link #hasAdditionalData()} to check whether calling this method would return in a null value.
 	 * @return additional data, if available
 	 */
 	public AdditionalData getAdditionalData();
