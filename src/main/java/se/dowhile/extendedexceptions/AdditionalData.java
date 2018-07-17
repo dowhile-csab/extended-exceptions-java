@@ -60,7 +60,7 @@ public class AdditionalData {
 	 * @return true if identity has been provided
 	 */
 	public boolean hasIdentity() {
-		return !identity.equals(NOT_IDENTIFIED);
+		return !NOT_IDENTIFIED.equals(identity);
 	}
 
 	/**
@@ -146,7 +146,7 @@ public class AdditionalData {
 	 */
 	@Generated("SparkTools")
 	public static final class Builder {
-		private String identity;
+		private String identity = NOT_IDENTIFIED;
 		private String issueCategory = AdditionalDataDefaults.getDefaultIssueCategory();
 		private String issueDomain = AdditionalDataDefaults.getDefaultIssueDomain();
 		private Object attachedObject;
